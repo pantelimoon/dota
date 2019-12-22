@@ -1,3 +1,5 @@
 git config --global user.name "Mona Lisa"
 git init
 git add .                                          //adauga la stagimng toate fisierele
+git commit -m "first commit"
+git remote add origin https://github.com/pantelimoon/dota.git
