@@ -1,5 +1,9 @@
 git config --global user.name "Mona Lisa"
 git init
-git add .                                          //adauga la stagimng toate fisierele
-git commit -m "first commit"
+git add .                                          //adauga la stage toate fisierele
+git commit -m "first commit"			   //coomit locally what is staged
+git commit -a -m "Autocommit staged and unstagede" //Autocommit staged and unstageded
 git remote add origin https://github.com/pantelimoon/dota.git
+git push -u origin master			   //push on server	
+git status
+git add <file>                                     //adauga la staged 
