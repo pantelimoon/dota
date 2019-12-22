@@ -1,0 +1,3 @@
+git config --global user.name "Mona Lisa"
+git init
+git add .                                          //adauga la stagimng toate fisierele
