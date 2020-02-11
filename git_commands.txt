@@ -5,7 +5,7 @@ git add .                                          //adauga la stage toate fisie
 git commit -m "first commit"			   //coomit locally what is staged
 git commit -a -m "Autocommit staged and unstage"   //Autocommit staged and unstageded
 git remote add origin https://github.com/pantelimoon/dota.git
-git push -u origin master			   //push on server	
+git push -u origin master			   //push to remote origin from local master	
 git status
 git add <file>                                     //adauga la staged 
 git log --oneline
