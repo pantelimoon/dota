@@ -1,10 +1,11 @@
 git config --global user.name "Mona Lisa"
+git config --global --list
 git init
 git add .                                          //adauga la stage toate fisierele
 git commit -m "first commit"			   //coomit locally what is staged
-git commit -a -m "Autocommit staged and unstage" //Autocommit staged and unstageded
+git commit -a -m "Autocommit staged and unstage"   //Autocommit staged and unstageded
 git remote add origin https://github.com/pantelimoon/dota.git
-git push -u origin master			   //push on server	
+git push -u origin master			   //push to remote origin from local master	
 git status
 git add <file>                                     //adauga la staged 
 git log --oneline
@@ -15,4 +16,39 @@ git stash					   //stashes
 git checkout -b new_branch			   //creates new branch	
 git checkout master				   //go to branch
 git merge new_branch				   //merge new_branch into current master
-git pull origin master				   //downloads and merges from server		
+git pull origin master				   //downloads and merges from server	
+git clone https://github.com/gittower/git-crash-course.git
+
+git checkout README.txt 			   //reverts changes on a file
+git reset --hard				   //undo pending changes and delets them as not moving them to unstaged
+git reset --soft HEAD~1				   //undo last commit and keeps changes as staged	
+git reset --mixed				   //undo pending changes as in keeping them as not staged
+
+git branch					   //lists local branches
+git branch -r					   //lists remote branches
+git branch -d feature1			 	   //soft delete
+git branch -D feature1				   //hard delete branch
+
+git remote					   //lists remote repo?	
+git remote -v
+git remote add origin <URL>    			   //add remote repo 
+
+git fetch origin  				   //fetches from origin
+git branch --set-upstream-to origin/master         //set up to track remote branch master from origin
+
+git tag <tagname>				   //sets a tag
+git tag						   //gets the current tag
+
+git log --graph --oneline --all --decorate
+git config --global alias.lga "log --graph --oneline --all --decorate"
+
+git branch -m fix1 bug1234			   //rename branch fix1 => bug1234
+git reflog 					   //view deleted branches
+
+git stash					   //stashes working dir on current branch
+git stash list					   //list of stashes
+git stash apply 				   //apply the stashes
+
+
+
+			
