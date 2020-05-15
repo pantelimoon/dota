@@ -51,4 +51,25 @@ git stash apply 				   //apply the stashes
 
 
 
+===========================
+The easiest option is to merge the master branch into the feature branch using something like the following:
+
+git checkout feature
+git merge master
+
+Or, you can condense this to a one-liner:
+
+git merge feature master
+
+This creates a new “merge commit” in the feature branch that ties together the histories of both branches
+
+==================================
+As an alternative to merging, you can rebase the feature branch onto master branch using the following commands:
+
+git checkout feature
+git rebase master
+This moves the entire feature branch to begin on the tip of the master branch, effectively incorporating all of the new commits in master.
+But, instead of using a merge commit, rebasing re-writes the project history by creating brand new commits for each commit in the 
+original branch.
+
 			

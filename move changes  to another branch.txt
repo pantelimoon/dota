@@ -1,0 +1,26 @@
+44
+
+If the changes are not commited.
+
+you can stash the changes in the master branch .
+
+git stash
+then checkout the branch
+
+git checkout -b newbranchname
+and pop the changes here
+
+git stash pop
+
+--------------------------------------------------------
+If the changes are commited :
+
+then create a branch :
+
+git checkout -b newbranch
+checkout back to master branch:
+
+git checkout master
+reset to previous commit :
+
+git reset --hard head^1
